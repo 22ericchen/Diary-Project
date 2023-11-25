@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <root>
+      <AnchorPane fx:id="background" prefHeight="750.0" prefWidth="1200.0">
+         <children>
+            <AnchorPane layoutX="-3.0" layoutY="-3.0" prefHeight="750.0" prefWidth="1200.0">
+               <children>
+                  <HBox layoutX="386.0" layoutY="210.0" prefHeight="750.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox maxHeight="1200.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <GridPane prefHeight="755.0" prefWidth="250.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label fx:id="constraintLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="20.0" maxHeight="30.0" maxWidth="250.0" minHeight="30.0" minWidth="250.0" prefHeight="30.0" prefWidth="250.0" text="Maximum Commitments: 0" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="constraintButton" alignment="CENTER" contentDisplay="CENTER" layoutX="81.0" layoutY="98.0" mnemonicParsing="false" text="Save Number" />
+                                          <TextField fx:id="maxArea" layoutX="106.0" layoutY="63.0" prefHeight="25.0" prefWidth="39.0" />
+                                          <Label fx:id="userWarning" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="136.0" maxHeight="37.0" maxWidth="210.0" minHeight="30.0" minWidth="210.0" prefHeight="37.0" prefWidth="210.0" text="Label" textAlignment="CENTER" wrapText="true" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <TextField fx:id="weekNameField" layoutX="14.0" layoutY="75.0" prefHeight="25.0" prefWidth="123.0" />
+                                          <Button fx:id="changeWeekName" layoutX="146.0" layoutY="75.0" mnemonicParsing="false" text="Change Name" />
+                                          <Label layoutX="68.0" layoutY="47.0" text="Change Week Name" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="171.0" prefWidth="250.0" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label fx:id="entriesLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="-19.0" maxHeight="30.0" maxWidth="250.0" minHeight="30.0" minWidth="250.0" prefHeight="30.0" prefWidth="250.0" text="Entries">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="newEventButton" alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="25.0" mnemonicParsing="false" text="New Event" />
+                                          <Button fx:id="newTaskButton" layoutX="92.0" layoutY="67.0" mnemonicParsing="false" text="New Task" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="186.0" prefWidth="250.0" GridPane.rowIndex="3">
+                                       <children>
+                                          <Label fx:id="themeLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="30.0" maxWidth="250.0" minHeight="30.0" minWidth="250.0" prefHeight="30.0" prefWidth="250.0" text="Themes">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ButtonBar layoutX="20.0" layoutY="29.0" prefHeight="40.0" prefWidth="200.0">
+                                             <buttons>
+                                                <Label text="Background" />
+                                                <ColorPicker fx:id="backgroundColor">
+                                                   <value>
+                                                      <Color red="0.8392156958580017" green="0.7333333492279053" blue="0.6196078658103943" />
+                                                   </value>
+                                                </ColorPicker>
+                                             </buttons>
+                                          </ButtonBar>
+                                          <ButtonBar layoutX="20.0" layoutY="69.0" prefHeight="40.0" prefWidth="200.0">
+                                             <buttons>
+                                                <Label text="Calendar" />
+                                                <ColorPicker fx:id="calendarColor">
+                                                   <value>
+                                                      <Color red="0.9019607901573181" green="0.8549019694328308" blue="0.7921568751335144" />
+                                                   </value>
+                                                </ColorPicker>
+                                             </buttons>
+                                          </ButtonBar>
+                                          <ButtonBar layoutX="20.0" layoutY="109.0" prefHeight="40.0" prefWidth="200.0">
+                                             <buttons>
+                                                <Label text="Text" />
+                                                <ColorPicker fx:id="textColor">
+                                                   <value>
+                                                      <Color />
+                                                   </value>
+                                                </ColorPicker>
+                                             </buttons>
+                                          </ButtonBar>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="124.0" prefWidth="250.0" GridPane.rowIndex="4">
+                                       <children>
+                                          <ButtonBar layoutX="30.0" layoutY="48.0" maxWidth="140.0" prefHeight="40.0" prefWidth="140.0">
+                                             <buttons>
+                                                <Button fx:id="brownTheme" mnemonicParsing="false" text="Brown" />
+                                                <Button fx:id="blueTheme" mnemonicParsing="false" text="Blue" />
+                                             </buttons>
+                                          </ButtonBar>
+                                          <ButtonBar layoutX="30.0" layoutY="92.0" prefHeight="40.0" prefWidth="100.0">
+                                             <buttons>
+                                                <Button fx:id="greenTheme" mnemonicParsing="false" text="Green" />
+                                                <Button fx:id="redTheme" mnemonicParsing="false" text="Red" />
+                                             </buttons>
+                                          </ButtonBar>
+                                          <ButtonBar layoutX="20.0" prefHeight="40.0" prefWidth="200.0">
+                                             <buttons>
+                                                <Label text="Font" />
+                                                <ComboBox fx:id="textFont" prefWidth="150.0" promptText="Select Font" />
+                                             </buttons>
+                                          </ButtonBar>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                        <AnchorPane fx:id="calendar" maxHeight="1200.0" prefHeight="785.0" prefWidth="700.0">
+                           <children>
+                              <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutY="10.0" maxHeight="40.0" maxWidth="700.0" minHeight="40.0" minWidth="700.0" prefHeight="40.0" prefWidth="700.0" text="Week Name" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <GridPane layoutX="6.0" layoutY="54.0" prefHeight="696.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="sun" layoutY="36.0" prefHeight="696.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="113.0" text="Sun" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <VBox fx:id="mon" layoutX="-12.0" layoutY="37.0" prefHeight="696.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="109.0" text="Mon" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <VBox fx:id="tue" layoutX="10.0" layoutY="108.0" prefHeight="696.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="101.0" text="Tue" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                       <children>
+                                          <VBox fx:id="wed" layoutX="29.0" layoutY="84.0" prefHeight="696.0" prefWidth="129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="111.0" text="Wed" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4">
+                                       <children>
+                                          <VBox fx:id="thu" layoutX="-10.0" layoutY="73.0" prefHeight="696.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="128.0" text="Thu" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5">
+                                       <children>
+                                          <VBox fx:id="fri" layoutX="-6.0" layoutY="6.0" prefHeight="696.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="115.0" text="Fri" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6">
+                                       <children>
+                                          <VBox fx:id="sat" layoutX="-22.0" layoutY="12.0" prefHeight="696.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="120.0" text="Sat" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="1200.0" prefHeight="1200.0" prefWidth="250.0">
+                           <children>
+                              <VBox fx:id="taskQueue" layoutX="-5.0" prefHeight="476.0" prefWidth="260.0" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label fx:id="taskQueueLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="255.0" minHeight="60.0" minWidth="255.0" prefHeight="60.0" prefWidth="255.0" text="Task Queue">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Button fx:id="saveWeek" layoutX="200.0" layoutY="718.0" mnemonicParsing="false" text="Save">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <AnchorPane layoutX="-2.0" layoutY="433.0" prefHeight="203.0" prefWidth="254.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" layoutX="1.0" layoutY="23.0" prefHeight="180.0" prefWidth="253.0">
+                                       <children>
+                                          <Label fx:id="quotesAndNotesLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="254.0" text="Quotes and Notes">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox fx:id="quotesAndNotesBox" prefHeight="200.0" prefWidth="100.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="643.0" prefHeight="73.0" prefWidth="255.0">
+                                 <children>
+                                    <TextArea fx:id="quoteNoteTextArea" layoutX="4.0" layoutY="-1.0" prefHeight="71.0" prefWidth="250.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="newNote" layoutX="14.0" layoutY="718.0" mnemonicParsing="false" text="Enter new note" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>

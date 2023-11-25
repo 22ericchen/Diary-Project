@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="388.0" prefWidth="543.0">
+      <children>
+         <StackPane prefHeight="150.0" prefWidth="200.0" />
+         <ImageView fx:id="image" fitHeight="388.0" fitWidth="553.0" layoutX="-6.0" pickOnBounds="true">
+            <image>
+               <Image url="@../../../../spash.jpg" />
+            </image>
+         </ImageView>
+      </children></AnchorPane>
+</Scene>

@@ -1,0 +1,1 @@
+{"name":"JAck","number-of-commits":5,"tasks":[{"name":"Test","day":"WEDNESDAY","description":"Please work","isComplete":true}],"events":[{"name":"EventTest","day":"THURSDAY","start-time":"10:00PM","duration":"4H30M","description":"WORK"}],"theme":{"background":"0xd6bb9eff","foreground":"0xe6dacaff","text-color":"0x000000ff","font":"Arial"},"quotes-and-notes":["Hello world"]}

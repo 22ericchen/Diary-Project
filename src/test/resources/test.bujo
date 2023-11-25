@@ -1,0 +1,65 @@
+{
+    "name": "Hello World",
+    "number-of-commits": 3,
+    "tasks": [
+        {
+            "name": "name",
+            "day": "MONDAY",
+            "description": "Hello again",
+            "isComplete": false
+        }
+    ],
+    "events": [
+        {
+            "name": "name",
+            "day": "SUNDAY",
+            "start-time": "10:00PM",
+            "duration": "12H30M",
+            "description": "Hello x3"
+        },
+        {
+            "name": "name",
+            "day": "TUESDAY",
+            "start-time": "10:00PM",
+            "duration": "12H30M",
+            "description": "Hello x3"
+        },
+        {
+            "name": "name",
+            "day": "WEDNESDAY",
+            "start-time": "10:00PM",
+            "duration": "12H30M",
+            "description": "Hello x3"
+        },
+        {
+            "name": "name",
+            "day": "THURSDAY",
+            "start-time": "10:00PM",
+            "duration": "12H30M",
+            "description": "Hello x3"
+        },
+        {
+            "name": "name",
+            "day": "FRIDAY",
+            "start-time": "10:00PM",
+            "duration": "12H30M",
+            "description": "Hello x3"
+        },
+        {
+            "name": "name",
+            "day": "SATURDAY",
+            "start-time": "10:00PM",
+            "duration": "12H30M",
+            "description": "Hello x3"
+        }
+    ],
+    "theme": {
+        "background": "#D6BB9E",
+        "foreground": "#E6DACA",
+        "text-color": "#000000"
+    },
+    "quotes-and-notes": [
+        "String",
+        "note"
+    ]
+}
